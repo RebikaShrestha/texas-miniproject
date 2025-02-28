@@ -26,16 +26,6 @@ public class DepartmentServiceImpl implements DepartmentService {
     }
 
     @Override
-    public Optional<Department> findDepartmentById(long id) {
-        return Optional.empty();
-    }
-
-    @Override
-    public Department getDepartmentById(int id) {
-        return null;
-    }
-
-    @Override
     public Optional<Department> getDepartmentById(Long id) {
         return Optional.empty();
     }
@@ -49,10 +39,4 @@ public class DepartmentServiceImpl implements DepartmentService {
     public Department updateDepartment(Department department) {
         return null;
     }
-
-    @Override
-    public void deleteDepartment(int id) {
-
-    }
 }
-

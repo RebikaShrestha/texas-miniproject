@@ -1,10 +1,9 @@
 package com.texas.miniprojecta.repository;
 
-import com.texas.miniprojecta.entity.Student;
+import com.texas.miniprojecta.entity.Instructor;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public interface StudentRepository extends JpaRepository<Student, Long> {
-
+public interface InstructorRepository extends JpaRepository<Instructor, Long> {
 }

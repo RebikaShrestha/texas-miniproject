@@ -1,5 +1,6 @@
 package com.texas.miniprojecta.services;
 
+
 import com.texas.miniprojecta.entity.Student;
 import org.springframework.http.HttpStatusCode;
 
@@ -11,10 +12,9 @@ public interface StudentService {
 
     List<Student> getAll();
 
-    Optional<Student> getById(Long id);
+    Optional<Student> getById(long id);
 
-    void deleteStudent(Long id);
+    void deleteStudent(long id);
 
     Student updateStudent(Student student);
-
 }

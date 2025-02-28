@@ -2,19 +2,17 @@ package com.texas.miniprojecta.services;
 
 import com.texas.miniprojecta.entity.Student;
 import com.texas.miniprojecta.repository.StudentRepository;
-import org.springframework.http.HttpStatusCode;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Optional;
-import java.util.OptionalInt;
 
 @Service
-public class StudentserviceImpl implements StudentService{
+public class StudentServiceImpl implements StudentService {
 
     private final StudentRepository studentRepository;
 
-    public StudentserviceImpl(StudentRepository studentRepository) {
+    public StudentServiceImpl(StudentRepository studentRepository) {
         this.studentRepository = studentRepository;
     }
 
@@ -22,19 +20,18 @@ public class StudentserviceImpl implements StudentService{
     public Student createStudent(Student student) {
         return studentRepository.save(student);
     }
-
     @Override
-    public List<Student> getAll() {
+    public List<Student> getAll(){
         return studentRepository.findAll();
     }
 
     @Override
-    public Optional<Student> getById(Long id) {
+    public Optional<Student> getById(long id) {
         return studentRepository.findById(id);
     }
 
     @Override
-    public void deleteStudent(Long id) {
+    public void deleteStudent(long id) {
         studentRepository.deleteById(id);
     }
 
